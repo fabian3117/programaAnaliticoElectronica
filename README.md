@@ -22,6 +22,12 @@ Este proyecto en progreso tiene como finalidades
 * JavaScript
 * Mysql
 
+
+ # Diagramas
+
+![image](https://github.com/fabian3117/programaAnaliticoElectronica/assets/34560661/1869d5ea-1cce-4855-b531-b63f24ed086c)
+
+
 # Partes Operativas
 * Muestra de programa analitico de la carrera.
 * Visualizacion del programa analitico de las materias asi como resumenes.
