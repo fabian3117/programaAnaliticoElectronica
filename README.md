@@ -8,6 +8,15 @@
 - 🌐 Solucionar el problema de la fragmentación de información de las diferentes materias de Ingeniería Electrónica.
 - 🧠 Aumentar la solidez de conocimientos a través de una plataforma operativa.
 
+# Version funcional
+En este momento ahi una version del proyecto funcionando en servidor.
+Aplicacion corriendo sobre  `Azure Web Aplication`.
+
+>  [`Puedes visualizarlo desde aquí`](https://proyectmateriasutnelectronica.azurewebsites.net/)
+
+> `Estamos mejorando progresivamente la aplicacion aun esta en desarrollo`.
+
+Para la etapa de deploy se utilizo `--GitActions`.
 
 Este proyecto en progreso tiene como finalidades
 - Muestra de los conocimientos adquiridos
@@ -21,6 +30,8 @@ Este proyecto en progreso tiene como finalidades
 * Java 17
 * JavaScript
 * Mysql
+* GitActions
+* Azure Web App
 * Whatssapp API Facebook business
 
 
