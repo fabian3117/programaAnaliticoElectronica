@@ -10,4 +10,9 @@ public class MuestraApplication {
 		SpringApplication.run(MuestraApplication.class, args);
 	}
 
+	    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+
 }
