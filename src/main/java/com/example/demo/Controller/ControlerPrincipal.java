@@ -35,17 +35,13 @@ public class ControlerPrincipal {
     @RequestMapping("")
   //  @ResponseBody
     public String Saludo(Model model){
-        System.out.println("SS");
         List<Materias> materias=materia.findAll();
-//        model.addAttribute("elementos",materias.get(0).getNombreMateria());
         ArrayList<String> nombreMaterias = new ArrayList<>();
         materias.forEach(elemento ->{
         nombreMaterias.add(elemento.getNombreMateria());
         });
-
         model.addAttribute("elementos",nombreMaterias);
         model.addAttribute("materias",materias);
-        System.out.println("Tamanio : "+materia.findAll().size());
         return "principal";
     }
 
@@ -59,9 +55,6 @@ public class ControlerPrincipal {
     @GetMapping("/lectura/{id}")
    // @ResponseBody
     public String Lectura(@PathVariable String id, Model model) throws IOException {
-        //String resourceName="archivosMarkdown/info1.md";
-  //      String resourceName="archivosMarkdown/"+id;
-//        ClassPathResource resource = new ClassPathResource(resourceName);
         ClassPathResource resource = Archivos.ObtenerPathArchivo(CategoriaArchivos.archivosMarkdown,id);
         Parser parser = Parser.builder().build();
         model.addAttribute("Titulo",id);
