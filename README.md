@@ -18,9 +18,10 @@ Este proyecto en progreso tiene como finalidades
 * Springboot Security
 * Thymeleaft
 * Markdown
-* Java 11
+* Java 17
 * JavaScript
 * Mysql
+* Whatssapp API Facebook business
 
 
  # Diagramas
@@ -38,8 +39,23 @@ Este proyecto en progreso tiene como finalidades
 * Portal de carga de archivos con metodos de autenticacion de springboot security.
 * Mejoras en el sistema de intercambio de archivos.
 * Implementacion del envio por whatssapp del material.
-## Correr proyecto
-Para la visualizacion en local del proyecto se requiere configurar applications.propertis con los datos para la conexion mysql.
+
+# Build
+
+**Obtención del Token para WhatsApp**
+
+Para la funcionalidad de envío a WhatsApp, se requiere la obtención del token y un numero asociado. Puedes obtenerlos a través de la plataforma de Meta Developers.
+>  [Puedes obtenerlos a través de la plataforma de Meta Developers](https://developers.facebook.com/docs/whatsapp/cloud-api)
+
+**Introducción del Token en `applications.properties`**
+
+Una vez obtenidos, se debe proceder a introducirlo en el `applications.properties`, como se muestra a continuación:
+```
+Facebook.Whatssapp.APIKEY=****
+Facebook.Whatssapp.numberServer=****
+```
+
+Para la visualización local del proyecto, se requiere configurar `applications.properties` con los datos para la conexión MySQL.
 Una ves configurados se debe inicializar la base de datos en la direccion:
 ```
 /inicializar
