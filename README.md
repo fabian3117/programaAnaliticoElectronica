@@ -28,6 +28,8 @@ Este proyecto en progreso tiene como finalidades
 
 ![image](https://github.com/fabian3117/programaAnaliticoElectronica/assets/34560661/1869d5ea-1cce-4855-b531-b63f24ed086c)
 
+![image](https://github.com/fabian3117/programaAnaliticoElectronica/assets/34560661/fac56158-7653-4d13-ad20-26792e2a51ef)
+
 
 # Partes Operativas
 * Muestra de programa analitico de la carrera.
