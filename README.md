@@ -106,6 +106,10 @@ En este ejemplo se visualiza la configuracion para utilizacion de gmail.
 
 ![image](https://github.com/fabian3117/programaAnaliticoElectronica/assets/34560661/d636d52d-4d23-475f-bd80-23d2f2e7dc9a).
 
+📧 **Ejemplo de WhatsApp:** Visualización de ejemplo de un mensaje de `WhatsApp`.
+![Screenshot_20230910-221818](https://github.com/fabian3117/programaAnaliticoElectronica/assets/34560661/6c4c84db-7e2c-4a0d-813b-3e64916232ca)
+
+
 ### ¡Más Actualizaciones en Camino! 💥
 
 Mantenete al tanto del changelog para conocer las próximas mejoras del sistema. ¡Futuras actualizaciones que te van a sorprender, che! 🛠️🚀
