@@ -49,28 +49,17 @@ public class ControlerMails {
     @ResponseBody
     public void EnvioCorreo(@PathVariable String id,@ModelAttribute CorreoModelo correoModelo)throws MessagingException, IOException, MessagingException{
 
-        //TODO Verificaciones de seguridad y optimizaciones de excepciones  <--
-        System.out.println(id);
-        System.out.println(correoModelo.getNombre());
-
-        //-->   Verificacion de la existencia de ese archivo o retornar error   <--
-        //-->   En caso de existir el archivo debere adjuntarlo <--
         Context context = new Context();
         String content = springTemplateEngine.process("templateMails", context);
         MimeMessage Mensaje = javaMailSender.mailSender().createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(Mensaje, true);
         helper.setFrom("GBA_Resoluciones@outlook.com.ar");
         //-->   Debug   <--
-        //helper.setTo(Generalidades.toMailsTest);
-        //helper.setSubject(Generalidades.subjectMailsSendSummary);
         helper.setSubject("Hola "+correoModelo.getNombre()+" Tus resumenes");
         helper.setTo(correoModelo.getCorreo());
         helper.setText("text");
         helper.setText(content, true);
-        //TODO TERMINAR ESTO
-//        helper.addAttachment("Resumen",null);
         helper.addAttachment(Archivos.nameFilePDF(id), Archivos.obtainFile(CategoriaArchivos.archivosPDF,id));
         javaMailSender.mailSender().send(Mensaje);
-//        javaMailSender.send(Mensaje);
     }
 }
